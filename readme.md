@@ -1,7 +1,7 @@
 ### Tamagotchi Emulator – Feature Mapping to Requirements
 ## Code Structure
 com/tamagotchi/core/
-    ┗Tamagotchi.java
+┗Tamagotchi.java
     ┗Player.java
     ┗Box.java   (Generic class)
 
