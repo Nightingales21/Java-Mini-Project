@@ -1,25 +1,25 @@
-### Tamagotchi Emulator – Feature Mapping to Requirements
-## Code Structure
-com/tamagotchi/core/
-┗Tamagotchi.java
+### Tamagotchi Emulator Code Structure
+## com/tamagotchi/core/
+    ┗Tamagotchi.java
     ┗Player.java
     ┗Box.java   (Generic class)
 
-com/tamagotchi/pets/
+## com/tamagotchi/pets/
     ┗DogTamagotchi.java
     ┗CatTamagotchi.java
 
-com/tamagotchi/game/
+## com/tamagotchi/game/
     ┗Game.java
     ┗Main.java
 
-com/tamagotchi/items/
+## com/tamagotchi/items/
     ┗Food.java
     ┗Toy.java
 
-com/tamagotchi/exceptions/
+## com/tamagotchi/exceptions/
     ┗PetDiedException.java
 
+### Feature Mapping to OOP Principles
 
 ## 1. Classes & Objects
 
