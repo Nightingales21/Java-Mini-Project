@@ -1,2 +1,2 @@
-Fluffy,50
-floof,50
+e
+CatTamagotchi,d,50,50
