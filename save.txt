@@ -1,2 +1,2 @@
-e
-CatTamagotchi,d,50,50
+Player:N
+DogTamagotchi,i,70,60,100
