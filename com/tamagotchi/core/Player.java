@@ -26,8 +26,8 @@ public class Player {
             System.out.println("Pets of " + name + ":");
             // Sorting by hunger using lambda, fixed for pre-Java 16
             List<Tamagotchi> sortedPets = pets.stream()
-                                              .sorted(Comparator.comparingInt(Tamagotchi::getHunger))
-                                              .collect(Collectors.toList()); // Changed .toList() to .collect(Collectors.toList())
+                .sorted(Comparator.comparingInt(Tamagotchi::getHunger))
+                .collect(Collectors.toList()); // Changed .toList() to .collect(Collectors.toList())
             for (Tamagotchi p : sortedPets) {
                 System.out.println(" - " + p);
             }
@@ -82,10 +82,10 @@ public class Player {
             for (Tamagotchi p : pets) {
                 // Format: type,name,hunger,happiness,health
                 writer.write(p.getClass().getSimpleName() + "," +
-                             p.getName() + "," +
-                             p.getHunger() + "," +
-                             p.getHappiness() + "," +
-                             p.getHealth());
+                    p.getName() + "," +
+                    p.getHunger() + "," +
+                    p.getHappiness() + "," +
+                    p.getHealth());
                 writer.newLine();
             }
             System.out.println("Progress saved for " + name + "!");

@@ -7,5 +7,7 @@ public class Toy {
         this.name = name;
     }
 
-    public String getName() { return name; }
+    public String getName() {
+        return name;
+    }
 }

@@ -79,9 +79,17 @@ class User implements Serializable {
         this.score = 0;
     }
 
-    public String getUsername() { return username; }
-    public int getScore() { return score; }
-    public void increaseScore(int value) { score += value; }
+    public String getUsername() {
+        return username;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void increaseScore(int value) {
+        score += value;
+    }
 }
 
 // ======================== FILE MANAGER ========================

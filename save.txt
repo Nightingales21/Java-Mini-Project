@@ -1,2 +1,3 @@
 Player:N
 DogTamagotchi,i,70,60,100
+Player:svta

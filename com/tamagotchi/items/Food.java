@@ -9,6 +9,11 @@ public class Food {
         this.nutrition = nutrition;
     }
 
-    public String getName() { return name; }
-    public int getNutrition() { return nutrition; }
+    public String getName() {
+        return name;
+    }
+
+    public int getNutrition() {
+        return nutrition;
+    }
 }
