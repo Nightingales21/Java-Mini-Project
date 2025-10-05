@@ -1,4 +1,9 @@
 # Tamagotchi Emulator Code Structure
+
+## To run the emulator  
+In the repo folder, run `javac com/tamagotchi/**/*.java`  
+Start the game with `java com.tamagotchi.game.Main`
+
 ## com/tamagotchi/core/
     ┗Tamagotchi.java
     ┗Player.java
