@@ -6,6 +6,7 @@ import com.tamagotchi.pets.CatTamagotchi;
 import com.tamagotchi.items.Food;
 import com.tamagotchi.items.Toy;
 import com.tamagotchi.exceptions.PetDiedException;
+import com.tamagotchi.ui.AsciiArt;
 import java.util.*;
 public class Game {
 private Player player;
@@ -56,8 +57,10 @@ String type = scanner.nextLine();
 System.out.print("Enter pet name: ");
 String pname = scanner.nextLine();
 if (type.equalsIgnoreCase("Dog")) {
+AsciiArt.displayPet("dog");
 player.adoptPet(new DogTamagotchi(pname));
 } else if (type.equalsIgnoreCase("Cat")) {
+AsciiArt.displayPet("cat");
 player.adoptPet(new CatTamagotchi(pname));
 } else {
 System.out.println("Unknown pet type!");
