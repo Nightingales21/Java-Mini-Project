@@ -1,4 +1,4 @@
-### Tamagotchi Emulator Code Structure
+# Tamagotchi Emulator Code Structure
 ## com/tamagotchi/core/
     ┗Tamagotchi.java
     ┗Player.java
@@ -19,7 +19,7 @@
 ## com/tamagotchi/exceptions/
     ┗PetDiedException.java
 
-### Feature Mapping to OOP Principles
+# Feature Mapping to OOP Principles
 
 ## 1. Classes & Objects
 
