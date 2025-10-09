@@ -36,9 +36,16 @@ public class Game {
         while (running) {
             System.out.println(bannerCatEscaped.replace("\\n", "\n"));
             System.out.println("\n1. Adopt Pet\n2. Show Pets\n3. Interact with Pet\n4. Exit\n\nChoose an action: ");
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
-            // Handle choice
+            String action = scanner.nextLine();
+            // scanner.nextLine();
+            int cho = 0;
+            try {
+                cho = Integer.parseInt(action);
+            }
+            catch (Exception e){
+                System.out.println("Invalid input: "+e.getMessage());
+                continue;
+            }
             try {
                 String os = System.getProperty("os.name").toLowerCase();
                 if (os.contains("win")) {
@@ -53,7 +60,7 @@ public class Game {
             catch (Exception e) {
                 e.printStackTrace();
             }
-            switch (choice) {
+            switch (cho) {
                 case 1:
                     adoptPet();
                     try {
@@ -115,8 +122,15 @@ public class Game {
         }
         Tamagotchi pet = pets.get(petIndex);
         System.out.println("\n1. Feed\n2. Play\n3. Sleep\n4. Bath\n5. Back");
-        int action = scanner.nextInt();
+        String action = scanner.nextLine();
         scanner.nextLine();
+        int cho = 0;
+        try {
+            cho = Integer.parseInt(action);
+        }
+        catch (Exception e){
+            System.out.println("Invalid input: "+e.getMessage());
+        }
         try {
             String os = System.getProperty("os.name").toLowerCase();
             if (os.contains("win")) {
@@ -124,10 +138,10 @@ public class Game {
                 new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
             } 
             else {
-                // On Unix-like systems
+                // On Unix-like systemsSAVE_FILE
                 new ProcessBuilder("clear").inheritIO().start().waitFor();
             }
-            switch (action) {
+            switch (cho) {
                 case 1:
                     System.out.println("Select food: ");
                     int foodIdx = 1;
@@ -177,7 +191,10 @@ public class Game {
             System.out.println("Error clearing console: " + e.getMessage());
         } catch (IOException e) {
             System.out.println("Error clearing console: " + e.getMessage());
-        } finally {
+        } catch (InputMismatchException e){
+            System.out.println("Invalid input: "+e.getMessage());
+        }
+        finally {
             // Finally block example: always show status after interaction
             if (!pets.isEmpty() && pets.contains(pet)) {
                 pet.status();
