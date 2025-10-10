@@ -1,6 +1,7 @@
 package com.tamagotchi.items;
+import com.tamagotchi.core.Box;
 
-public class Toy {
+public class Toy extends Box{
     private String name;
 
     public Toy(String name) {

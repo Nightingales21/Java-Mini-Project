@@ -123,7 +123,7 @@ public class Game {
         Tamagotchi pet = pets.get(petIndex);
         System.out.println("\n1. Feed\n2. Play\n3. Sleep\n4. Bath\n5. Back");
         String action = scanner.nextLine();
-        scanner.nextLine();
+        // scanner.nextLine();
         int cho = 0;
         try {
             cho = Integer.parseInt(action);
