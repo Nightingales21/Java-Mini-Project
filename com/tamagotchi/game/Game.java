@@ -27,7 +27,7 @@ public class Game {
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
         player = new Player(name);
-        // ✅ Load progress
+        //  Load progress
         player.loadProgress(SAVE_FILE);
         boolean running = true;
        String bannerCatEscaped = "==============================================================================\\n" +
@@ -218,7 +218,7 @@ public class Game {
     }
 
     private void exitGame() {
-        // ✅ Save before exit
+        //  Save before exit
         player.saveProgress(SAVE_FILE);
         System.out.println("Goodbye!");
     }

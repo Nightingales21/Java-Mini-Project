@@ -38,7 +38,7 @@ public class Player {
         return pets;
     }
 
-    // ✅ Save pets to file (multi-user support in single file)
+    //  Save pets to file (multi-user support in single file)
     public void saveProgress(String filename) {
         File file = new File(filename);
         List<String> otherLines = new ArrayList<>();
@@ -94,7 +94,7 @@ public class Player {
         }
     }
 
-    // ✅ Load pets from file (multi-user support)
+    //  Load pets from file (multi-user support)
     public void loadProgress(String filename) {
         File file = new File(filename);
         if (!file.exists()) {
