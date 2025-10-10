@@ -92,7 +92,9 @@ public class Player {
         } catch (IOException e) {
             System.out.println("Error saving: " + e.getMessage());
         }
-    }
+    }.displayPet("dog");
+            player.adoptPet(new DogTamagotchi(pname));
+        } else if (type.equalsIgnoreCase("Cat")) {
 
     //  Load pets from file (multi-user support)
     public void loadProgress(String filename) {
@@ -111,8 +113,8 @@ public class Player {
                         mySection = true;
                     } else {
                         mySection = false;
-                    }
-                    continue;
+         :           }
+                    continue;:
                 }
                 if (mySection) {
                     String[] data = line.split(",");

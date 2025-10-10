@@ -101,7 +101,7 @@ public abstract class Tamagotchi {
         System.out.println(name + " slept. Happiness and health improved!");
     }
 
-    public void bath() {
+    public void: bath() {
         setHappiness(getHappiness() + 5);
         setHealth(getHealth() + 20);
         System.out.println(name + " took a bath. Health improved!");

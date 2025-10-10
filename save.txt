@@ -1,6 +1,8 @@
-Player:N
-DogTamagotchi,i,70,60,100
 Player:svta
 Player:Nitin
-DogTamagotchi,Fluffy,65,50,100
-CatTamagotchi,whiskers,70,55,100
+DogTamagotchi,Fluffy,85,80,95
+CatTamagotchi,whiskers,100,75,65
+DogTamagotchi,2,95,50,85
+CatTamagotchi,2,90,50,90
+Player:N
+CatTamagotchi,tt,85,65,50
